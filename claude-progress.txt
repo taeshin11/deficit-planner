@@ -1,0 +1,52 @@
+================================================================================
+DEFICIT PLANNER — CLAUDE PROGRESS LOG
+================================================================================
+
+[2026-03-30 SESSION START]
+- New session. PRD.md is the only existing file.
+- Created feature_list.json with 11 features (F01–F11).
+- F01 status: in-progress → initializing Next.js project.
+
+[2026-03-30] F01: Project Init
+- Created feature_list.json, claude-progress.txt, init.sh
+- Initializing Next.js 14 app with App Router + Tailwind CSS
+- Tech stack: Next.js, Tailwind, Chart.js CDN, Google Sheets webhook
+- Next: F02 Core Calculator
+
+[2026-03-30] F02–F04: Core Calculator + Results + UX (done in session 1)
+- Calculator.tsx: BMR (Mifflin-St Jeor), TDEE, validation, unit toggle, localStorage persistence
+- Results.tsx: Summary cards, Chart.js line chart with milestones, share buttons, Copy My Plan
+- Header.tsx: Sticky nav with mobile hamburger menu
+- Footer.tsx: SPINAI branding, visitor counter, business inquiry mailto
+- AdUnit.tsx: Adsterra placeholder ad units (native, rectangle)
+- FeedbackWidget.tsx: Floating button + modal with textarea/email
+- globals.css: Full design system (Inter font, pastel palette, rounded cards, responsive)
+
+[2026-03-30] SESSION 2 — Resumed
+- Confirmed F01–F04, F08, F09 were already built.
+- Fixed TypeScript build error in Results.tsx (window.confirm always-true condition).
+
+[2026-03-30] F05: SEO Meta + Structured Data — DONE
+- robots.txt and sitemap.xml created in /public
+- JSON-LD FAQPage + WebApplication schemas in page.tsx
+- OG/Twitter meta tags in layout.tsx
+- Canonical URL set
+
+[2026-03-30] F06: Content Pages — DONE
+- Created 8 content pages (all 600+ words):
+  /about, /how-it-works, /faq (12 Q&A), /privacy, /terms, /contact,
+  /blog/calorie-deficit-guide, /blog/safe-weight-loss-rate
+- All pages use consistent layout (Header + Footer + prose styling)
+
+[2026-03-30] F07: Google Sheets Webhook — DONE
+- Created apps-script/Code.gs with doPost (calculations, feedback, visits) and doGet (visitor counts)
+- Frontend already wired to NEXT_PUBLIC_SHEETS_WEBHOOK_URL env var
+
+[2026-03-30] Build verification — SUCCESS
+- npm run build: All 12 routes statically generated, 0 errors
+- Routes: /, /about, /how-it-works, /faq, /privacy, /terms, /contact,
+  /blog/calorie-deficit-guide, /blog/safe-weight-loss-rate, /_not-found
+
+NEXT: F10 — GitHub repo creation + Vercel deployment
+
+================================================================================

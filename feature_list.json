@@ -1,0 +1,68 @@
+[
+  {
+    "id": "F01",
+    "title": "Project Init + Handoff Files",
+    "status": "done",
+    "description": "Create feature_list.json, claude-progress.txt, init.sh. Initialize Next.js project with Tailwind CSS."
+  },
+  {
+    "id": "F02",
+    "title": "Core Calculator Logic",
+    "status": "done",
+    "description": "Implement BMR (Mifflin-St Jeor) + TDEE calculation, unit toggle (metric/imperial), validation, health warning. Persist unit preference in localStorage."
+  },
+  {
+    "id": "F03",
+    "title": "Results Display + Chart",
+    "status": "done",
+    "description": "Summary cards (daily target, deficit, completion date, total calories), Chart.js line chart with milestone markers and hover tooltips, Recalculate button."
+  },
+  {
+    "id": "F04",
+    "title": "Responsive Design + UX Polish",
+    "status": "done",
+    "description": "Mobile-first CSS, breakpoints at 480/768/1024/1280px, hero section, smooth scroll, share buttons, Copy My Plan, design system (Inter font, pastel palette, rounded cards)."
+  },
+  {
+    "id": "F05",
+    "title": "SEO Meta + Structured Data",
+    "status": "done",
+    "description": "Title/meta/OG/Twitter tags, JSON-LD FAQPage + WebApplication schemas, canonical URL, robots meta, sitemap.xml, robots.txt."
+  },
+  {
+    "id": "F06",
+    "title": "Content Pages",
+    "status": "done",
+    "description": "About, How It Works, FAQ (12 Q&A), Privacy Policy, Terms of Service, Contact, Blog: calorie-deficit-guide, Blog: safe-weight-loss-rate. Minimum 600 words each."
+  },
+  {
+    "id": "F07",
+    "title": "Google Sheets Webhook + Visitor Counter",
+    "status": "done",
+    "description": "Apps Script Code.gs (doPost + doGet), fire-and-forget data collection on Calculate, async visitor counter in footer (Today/Total)."
+  },
+  {
+    "id": "F08",
+    "title": "Ad Integration (Adsterra)",
+    "status": "done",
+    "description": "Adsterra async ad placements: native banner below hero, 300x250 rectangle sidebar/between-sections, social bar. ADSTERRA_KEY_HERE placeholders."
+  },
+  {
+    "id": "F09",
+    "title": "Feedback Widget + Contact Mechanisms",
+    "status": "done",
+    "description": "Floating feedback button, modal with textarea + email, POST to Apps Script feedback sheet. Footer business inquiry mailto. SPINAI branding."
+  },
+  {
+    "id": "F10",
+    "title": "GitHub + Vercel Deployment",
+    "status": "pending",
+    "description": "gh repo create, git init + push, npx vercel --prod. Record live URL in claude-progress.txt."
+  },
+  {
+    "id": "F11",
+    "title": "Final QA + Lighthouse Audit",
+    "status": "pending",
+    "description": "Post-deploy verification checklist, Lighthouse scores (Perf>=90, A11y>=90, SEO=100), fix issues, redeploy."
+  }
+]
