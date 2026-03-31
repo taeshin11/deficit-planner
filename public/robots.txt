@@ -1,4 +1,9 @@
 User-agent: *
 Allow: /
+Disallow: /_next/
+Disallow: /api/
 
 Sitemap: https://deficit-planner.vercel.app/sitemap.xml
+
+# Deficit Planner - Free Calorie Deficit Calculator
+# https://deficit-planner.vercel.app

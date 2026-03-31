@@ -6,27 +6,38 @@ import ClientLayout from "@/components/ClientLayout";
 const inter = Inter({ subsets: ["latin"], display: "swap" });
 
 export const metadata: Metadata = {
-  title: "Free Calorie Deficit Calculator - Lose Weight on Your Schedule | Deficit Planner",
-  description: "Enter your goal weight and timeframe to get a personalized daily calorie deficit plan with a visual weight-loss chart. 100% free.",
-  keywords: "calorie deficit calculator, weight loss calculator, how to lose weight, daily calorie intake, BMR calculator, TDEE calculator",
+  metadataBase: new URL("https://deficit-planner.vercel.app"),
+  title: {
+    default: "Free Calorie Deficit Calculator | Deficit Planner",
+    template: "%s | Deficit Planner",
+  },
+  description: "Calculate your personalized daily calorie deficit plan with an interactive weight-loss projection chart. Free BMR & TDEE calculator — no sign-up required.",
+  keywords: "calorie deficit calculator, weight loss calculator, BMR calculator, TDEE calculator, how to lose weight, daily calorie intake, calorie counter, diet planner, weight loss plan, macro calculator",
   authors: [{ name: "SPINAI" }],
-  robots: { index: true, follow: true },
+  creator: "SPINAI",
+  publisher: "Deficit Planner",
+  robots: { index: true, follow: true, "max-snippet": -1, "max-image-preview": "large" as const, "max-video-preview": -1 },
   openGraph: {
     title: "Free Calorie Deficit Calculator | Deficit Planner",
-    description: "Get a personalized daily calorie deficit plan with a visual weight-loss projection chart. 100% free.",
+    description: "Calculate your personalized daily calorie deficit plan with an interactive weight-loss projection chart. 100% free, science-backed.",
     url: "https://deficit-planner.vercel.app",
     siteName: "Deficit Planner",
-    images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "Deficit Planner - Free Calorie Deficit Calculator" }],
+    images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "Deficit Planner - Free Calorie Deficit Calculator with Weight Loss Chart" }],
     locale: "en_US",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
     title: "Free Calorie Deficit Calculator | Deficit Planner",
-    description: "Get a personalized daily calorie deficit plan with a visual weight-loss projection chart. 100% free.",
+    description: "Calculate your personalized daily calorie deficit plan with an interactive weight-loss projection chart. 100% free.",
     images: ["/og-image.png"],
+    creator: "@spinai",
   },
   alternates: { canonical: "https://deficit-planner.vercel.app" },
+  category: "Health & Fitness",
+  verification: {
+    google: "GOOGLE_SITE_VERIFICATION_HERE",
+  },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

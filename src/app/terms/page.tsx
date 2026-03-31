@@ -5,184 +5,448 @@ import Footer from "@/components/Footer";
 export const metadata: Metadata = {
   title: "Terms of Service | Deficit Planner",
   description:
-    "Read the Terms of Service for Deficit Planner, the free calorie deficit calculator. Understand your rights, limitations, and our policies.",
+    "Read the Terms of Service for Deficit Planner, the free calorie deficit calculator. Understand your rights, responsibilities, limitations of liability, and our policies.",
+  keywords:
+    "terms of service, terms and conditions, deficit planner terms, calorie calculator terms, legal terms, disclaimer, limitation of liability",
+  openGraph: {
+    title: "Terms of Service | Deficit Planner",
+    description:
+      "Comprehensive Terms of Service for Deficit Planner. Understand the rules, disclaimers, and legal terms governing your use of our free calorie deficit calculator.",
+    url: "https://deficit-planner.vercel.app/terms",
+    siteName: "Deficit Planner",
+    type: "website",
+  },
 };
 
 export default function TermsOfService() {
   return (
     <>
       <Header />
-      <main style={{ maxWidth: 760, margin: "0 auto", padding: "40px 20px 60px" }}>
+      <main
+        style={{
+          maxWidth: 760,
+          margin: "0 auto",
+          padding: "40px 20px 60px",
+        }}
+      >
         <div className="prose">
           <h1>Terms of Service</h1>
+
           <p>
-            <strong>Last Updated: March 30, 2026</strong>
-          </p>
-          <p>
-            Welcome to Deficit Planner. These Terms of Service (&quot;Terms&quot;) govern your
-            access to and use of the Deficit Planner website, located at
-            deficit-planner.vercel.app (the &quot;Site&quot;), including all content,
-            features, tools, and services offered through the Site. By accessing or
-            using Deficit Planner, you agree to be bound by these Terms. If you do
-            not agree with any part of these Terms, you must stop using the Site
-            immediately.
+            <strong>Effective Date: March 30, 2026</strong>
           </p>
 
-          <h2>1. Acceptance of Terms</h2>
+          {/* ── 1. Agreement to Terms ── */}
+          <h2>1. Agreement to Terms</h2>
+
           <p>
-            By visiting, browsing, or using Deficit Planner in any capacity, you
-            acknowledge that you have read, understood, and agree to be bound by
-            these Terms of Service, as well as our Privacy Policy. These Terms
-            constitute a legally binding agreement between you (&quot;User,&quot;
-            &quot;you,&quot; or &quot;your&quot;) and Deficit Planner (&quot;we,&quot;
-            &quot;us,&quot; or &quot;our&quot;). We reserve the right to update or
-            modify these Terms at any time without prior notice. Your continued use
-            of the Site following any changes constitutes acceptance of those
-            changes. We encourage you to review this page periodically to stay
-            informed about our terms and conditions.
+            Welcome to Deficit Planner. These Terms of Service
+            (&quot;Terms,&quot; &quot;Agreement&quot;) constitute a legally
+            binding agreement between you (&quot;User,&quot; &quot;you,&quot; or
+            &quot;your&quot;) and Deficit Planner (&quot;we,&quot;
+            &quot;us,&quot; or &quot;our&quot;). These Terms govern your access
+            to and use of the Deficit Planner website located at{" "}
+            <a
+              href="https://deficit-planner.vercel.app"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              https://deficit-planner.vercel.app
+            </a>{" "}
+            (the &quot;Site&quot;), including all content, features, tools,
+            calculators, and services offered through the Site.
           </p>
 
+          <p>
+            By accessing, browsing, or using Deficit Planner in any capacity,
+            you acknowledge that you have read, understood, and agree to be
+            bound by these Terms of Service in their entirety, as well as our{" "}
+            <a href="/privacy">Privacy Policy</a>, which is incorporated into
+            these Terms by reference. If you do not agree with any part of these
+            Terms, you must discontinue use of the Site immediately. We reserve
+            the right to update or modify these Terms at any time, and your
+            continued use of the Site following any changes constitutes your
+            acceptance of the revised Terms.
+          </p>
+
+          {/* ── 2. Description of Service ── */}
           <h2>2. Description of Service</h2>
+
           <p>
-            Deficit Planner is a free online calorie deficit calculator that allows
-            users to estimate their Basal Metabolic Rate (BMR), Total Daily Energy
-            Expenditure (TDEE), and the daily calorie intake needed to achieve a
-            specific weight-loss goal within a chosen timeframe. The calculator
-            provides projected weight-loss charts and personalized calorie targets
-            based on the data you enter. The tool is designed to be educational and
-            informational, offering general guidance to support healthy
+            Deficit Planner is a free online calorie deficit calculator designed
+            to help users estimate their Basal Metabolic Rate (BMR), Total Daily
+            Energy Expenditure (TDEE), and the daily calorie intake required to
+            achieve a specific weight-loss goal within a chosen timeframe. The
+            calculator provides projected weight-loss charts, personalized
+            calorie targets, and related nutritional information based on the
+            data you enter. The tool is designed to serve as an educational and
+            informational resource, offering general guidance to support healthy
             weight-management decisions.
           </p>
 
-          <h2>3. Educational Purpose Only — Not Medical Advice</h2>
           <p>
-            The information and results provided by Deficit Planner are for
-            educational and informational purposes only. Nothing on this Site should
-            be interpreted as medical advice, dietary prescription, or a substitute
-            for professional healthcare guidance. The calorie estimates and
-            projections are based on widely used formulas, including the Mifflin-St
-            Jeor equation, and represent general approximations that may not account
-            for your individual health conditions, medications, metabolic variations,
-            or other personal factors.
-          </p>
-          <p>
-            You should always consult a qualified healthcare provider, registered
-            dietitian, or medical professional before starting any new diet,
-            exercise program, or weight-loss plan, especially if you have
-            pre-existing health conditions, are pregnant or nursing, are under 18
-            years of age, or take medications that affect your metabolism. Deficit
-            Planner disclaims all liability for any decisions you make based on the
-            information provided through the calculator or any content on this Site.
+            The Service is provided free of charge and is supported by
+            third-party advertising. All calculator computations are performed
+            entirely within your web browser using client-side JavaScript, which
+            means your personal inputs are not transmitted to or stored on our
+            servers. Deficit Planner does not require account creation,
+            registration, or the submission of any personally identifiable
+            information to use its core features.
           </p>
 
+          {/* ── 3. Medical Disclaimer ── */}
+          <h2>3. Medical Disclaimer</h2>
+
+          <p>
+            <strong>
+              The information and results provided by Deficit Planner are for
+              educational and informational purposes only and do not constitute
+              medical advice, dietary prescription, clinical diagnosis, or a
+              substitute for professional healthcare guidance.
+            </strong>
+          </p>
+
+          <p>
+            The calorie estimates, BMR calculations, TDEE projections, and
+            weight-loss timelines generated by the calculator are based on widely
+            recognized formulas, including the Mifflin-St Jeor equation, and
+            represent general mathematical approximations. These estimates may
+            not account for your individual health conditions, medical history,
+            medications, metabolic variations, genetic factors, hormonal
+            imbalances, or other personal circumstances that can significantly
+            influence your nutritional needs and weight management.
+          </p>
+
+          <p>
+            You should always consult a qualified healthcare provider, licensed
+            physician, registered dietitian, or other certified medical
+            professional before starting any new diet, calorie restriction plan,
+            exercise program, or weight-loss regimen. This is especially
+            important if you have pre-existing health conditions (including but
+            not limited to diabetes, cardiovascular disease, eating disorders, or
+            metabolic conditions), are pregnant or nursing, are under 18 years of
+            age, or take medications that affect your metabolism or appetite.
+          </p>
+
+          <p>
+            Deficit Planner expressly disclaims all liability for any health
+            consequences, injuries, adverse effects, or other damages that may
+            result from decisions you make based on the information provided
+            through the calculator or any content on this Site. You use the
+            calculator and act on its results entirely at your own risk.
+          </p>
+
+          {/* ── 4. User Responsibilities ── */}
           <h2>4. User Responsibilities</h2>
+
           <p>
-            When using Deficit Planner, you agree to provide accurate and truthful
-            information in the calculator inputs. You acknowledge that inaccurate
-            inputs will produce inaccurate results. You agree to use the Site and
-            its tools responsibly and in accordance with these Terms. You must not
-            use the Site for any unlawful purpose, attempt to reverse-engineer or
-            extract source code from the Site, or interfere with or disrupt the
-            functionality of the Site or its servers. You are responsible for
-            ensuring that your use of the Site complies with all applicable local,
-            national, and international laws and regulations.
+            As a user of Deficit Planner, you agree to the following
+            responsibilities and obligations:
           </p>
 
+          <ul>
+            <li>
+              You agree to provide accurate and truthful information when using
+              the calculator and acknowledge that inaccurate inputs will produce
+              inaccurate results.
+            </li>
+            <li>
+              You agree to use the Site and its tools responsibly, lawfully, and
+              in accordance with these Terms.
+            </li>
+            <li>
+              You acknowledge that the results provided by the calculator are
+              estimates only and should not be relied upon as the sole basis for
+              dietary or health decisions.
+            </li>
+            <li>
+              You agree not to use the Site for any unlawful, fraudulent, or
+              malicious purpose.
+            </li>
+            <li>
+              You agree not to attempt to reverse-engineer, decompile,
+              disassemble, or extract the source code of the Site or its
+              underlying software.
+            </li>
+            <li>
+              You agree not to interfere with or disrupt the functionality,
+              security, or availability of the Site or its servers.
+            </li>
+            <li>
+              You are responsible for ensuring that your use of the Site complies
+              with all applicable local, national, and international laws and
+              regulations.
+            </li>
+          </ul>
+
+          {/* ── 5. Intellectual Property ── */}
           <h2>5. Intellectual Property</h2>
+
           <p>
             All content on Deficit Planner, including but not limited to text,
-            graphics, logos, icons, images, software code, calculator algorithms,
-            blog articles, page designs, and the overall look and feel of the Site,
-            is the property of Deficit Planner and its creator, SPINAI, and is
-            protected by applicable copyright, trademark, and intellectual property
-            laws. You may not reproduce, distribute, modify, create derivative works
-            from, publicly display, or otherwise exploit any content from this Site
-            without our express written permission. Limited use is permitted for
-            personal, non-commercial purposes such as sharing a link to the Site or
-            referencing our content with proper attribution.
+            graphics, logos, icons, images, illustrations, software code,
+            calculator algorithms, user interface designs, page layouts, color
+            schemes, and the overall look and feel of the Site, is the
+            proprietary property of Deficit Planner and its creator and is
+            protected by applicable copyright, trademark, trade dress, and
+            other intellectual property laws. All rights not expressly granted
+            herein are reserved.
           </p>
 
-          <h2>6. Limitation of Liability</h2>
           <p>
-            To the maximum extent permitted by applicable law, Deficit Planner, its
-            owner, developers, and affiliates shall not be liable for any direct,
-            indirect, incidental, special, consequential, or punitive damages
-            arising out of or related to your use of, or inability to use, the Site.
-            This includes, without limitation, damages for loss of data, health
-            complications, personal injury, lost profits, or other intangible
-            losses, even if we have been advised of the possibility of such damages.
-          </p>
-          <p>
-            The Site and all content, tools, and services are provided on an
-            &quot;as is&quot; and &quot;as available&quot; basis without warranties of
-            any kind, whether express or implied, including but not limited to
-            implied warranties of merchantability, fitness for a particular purpose,
-            and non-infringement. We do not warrant that the Site will be
-            uninterrupted, error-free, secure, or free of viruses or other harmful
-            components.
+            You may not reproduce, distribute, modify, create derivative works
+            from, publicly display, publicly perform, republish, download,
+            store, or otherwise exploit any content from this Site without our
+            express prior written permission. Limited, non-commercial use is
+            permitted, including sharing a link to the Site on social media or
+            referencing our content with proper attribution, provided that such
+            use does not imply endorsement by Deficit Planner and does not
+            involve the reproduction of substantial portions of our content.
           </p>
 
-          <h2>7. Third-Party Advertisements</h2>
+          {/* ── 6. Third-Party Content and Advertising ── */}
+          <h2>6. Third-Party Content and Advertising</h2>
+
           <p>
-            Deficit Planner may display advertisements from third-party advertising
-            networks, including but not limited to Google AdSense. These
-            advertisements may use cookies and similar tracking technologies to
-            serve ads based on your browsing behavior. We do not control the content
-            of third-party advertisements, and the presence of such ads does not
-            constitute an endorsement of the advertised products or services. Your
-            interactions with third-party advertisers are solely between you and the
-            advertiser. We encourage you to review the privacy policies and terms of
-            any third-party services you interact with through advertisements on our
-            Site. For more information about how advertising cookies are used,
-            please refer to our Privacy Policy.
+            Deficit Planner displays advertisements provided by third-party
+            advertising networks, including but not limited to Google AdSense
+            and Adsterra. These advertisements may use cookies and similar
+            tracking technologies to serve ads based on your browsing behavior
+            and interests. We do not control the content, accuracy, or
+            availability of third-party advertisements, and the display of such
+            advertisements on our Site does not constitute an endorsement,
+            recommendation, or guarantee of the advertised products, services,
+            or companies.
           </p>
 
-          <h2>8. Third-Party Links</h2>
           <p>
-            The Site may contain links to external websites or resources that are not
-            owned or controlled by Deficit Planner. We are not responsible for the
-            content, privacy policies, or practices of any third-party websites. You
-            acknowledge and agree that we are not liable for any damage or loss
-            caused by your use of or reliance on any content, goods, or services
-            available through third-party sites.
+            The Site may also contain links to external websites, resources, or
+            services that are not owned, operated, or controlled by Deficit
+            Planner. We are not responsible for the content, privacy policies,
+            terms of service, or practices of any third-party websites or
+            services. Your interactions with third-party advertisers, websites,
+            and services are solely between you and the respective third party.
+            We strongly encourage you to review the privacy policies and terms of
+            service of any third-party site before providing personal
+            information or engaging in transactions. For more information about
+            how advertising cookies are used on this Site, please refer to our{" "}
+            <a href="/privacy">Privacy Policy</a>.
           </p>
 
-          <h2>9. Changes to Terms</h2>
+          {/* ── 7. Limitation of Liability ── */}
+          <h2>7. Limitation of Liability</h2>
+
           <p>
-            We reserve the right to revise, amend, or replace these Terms of Service
-            at any time at our sole discretion. When we make material changes, we
-            will update the &quot;Last Updated&quot; date at the top of this page. It
-            is your responsibility to check this page periodically for changes. Your
-            continued use of the Site after any modifications to the Terms
-            constitutes your acceptance of the revised Terms. If you do not agree
-            with the updated Terms, you should discontinue use of the Site.
+            To the maximum extent permitted by applicable law, Deficit Planner,
+            its owner, operators, developers, contributors, and affiliates shall
+            not be liable for any direct, indirect, incidental, special,
+            consequential, exemplary, or punitive damages arising out of or
+            related to your use of, or inability to use, the Site, its content,
+            tools, or services. This limitation of liability applies to all
+            claims, whether based on warranty, contract, tort (including
+            negligence), strict liability, or any other legal theory, and
+            includes but is not limited to damages for loss of data, loss of
+            profits, loss of goodwill, personal injury, health complications,
+            business interruption, or other intangible losses, even if we have
+            been advised of the possibility of such damages.
           </p>
 
-          <h2>10. Termination</h2>
           <p>
-            We reserve the right to suspend or terminate your access to the Site at
-            any time, for any reason, without notice or liability. Upon termination,
-            all provisions of these Terms that by their nature should survive
-            termination will continue to apply, including but not limited to
-            intellectual property provisions, disclaimers, and limitations of
-            liability.
+            In no event shall our total aggregate liability to you for all claims
+            arising out of or relating to the use of the Site exceed the amount
+            you paid to us for access to the Site, which, as a free service, is
+            zero dollars ($0.00 USD).
           </p>
 
-          <h2>11. Governing Law</h2>
+          {/* ── 8. Disclaimer of Warranties ── */}
+          <h2>8. Disclaimer of Warranties</h2>
+
           <p>
-            These Terms shall be governed by and construed in accordance with
-            applicable laws, without regard to conflict of law principles. Any
-            disputes arising from or relating to these Terms or your use of the Site
-            shall be resolved through good-faith negotiation. If negotiation fails,
-            disputes may be submitted to a competent court of jurisdiction.
+            THE SITE AND ALL CONTENT, TOOLS, CALCULATORS, FEATURES, AND SERVICES
+            PROVIDED THROUGH THE SITE ARE OFFERED ON AN &quot;AS IS&quot; AND
+            &quot;AS AVAILABLE&quot; BASIS WITHOUT WARRANTIES OF ANY KIND,
+            WHETHER EXPRESS, IMPLIED, STATUTORY, OR OTHERWISE. TO THE FULLEST
+            EXTENT PERMITTED BY APPLICABLE LAW, WE EXPRESSLY DISCLAIM ALL
+            WARRANTIES, INCLUDING BUT NOT LIMITED TO IMPLIED WARRANTIES OF
+            MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, ACCURACY,
+            COMPLETENESS, RELIABILITY, TITLE, AND NON-INFRINGEMENT.
           </p>
 
-          <h2>12. Contact Us</h2>
           <p>
-            If you have any questions, concerns, or requests regarding these Terms
-            of Service, please contact us at{" "}
-            <a href="mailto:spinaiceo@gmail.com">spinaiceo@gmail.com</a>. We will
-            make a reasonable effort to respond to your inquiry in a timely manner.
+            We do not warrant that the Site will be uninterrupted, error-free,
+            secure, free of viruses or other harmful components, or that any
+            defects will be corrected. We do not warrant that the results
+            obtained from the use of the calculator will be accurate, reliable,
+            or suitable for any particular purpose. We make no representation or
+            warranty regarding the accuracy, timeliness, or completeness of any
+            content on the Site, including calorie estimates, BMR calculations,
+            and weight-loss projections. You acknowledge and agree that your use
+            of the Site and reliance on its content is entirely at your own risk.
+          </p>
+
+          {/* ── 9. Indemnification ── */}
+          <h2>9. Indemnification</h2>
+
+          <p>
+            You agree to indemnify, defend, and hold harmless Deficit Planner,
+            its owner, operators, developers, contributors, affiliates, and
+            their respective officers, directors, employees, agents, and
+            successors from and against any and all claims, demands, damages,
+            losses, liabilities, costs, and expenses (including reasonable
+            attorneys&apos; fees and court costs) arising out of or relating to
+            your use of the Site, your violation of these Terms, your violation
+            of any applicable law or regulation, or your infringement of any
+            third-party rights, including but not limited to intellectual
+            property rights and privacy rights. This indemnification obligation
+            shall survive the termination of these Terms and your use of the
+            Site.
+          </p>
+
+          {/* ── 10. Acceptable Use Policy ── */}
+          <h2>10. Acceptable Use Policy</h2>
+
+          <p>
+            You agree not to engage in any of the following prohibited
+            activities when using the Site:
+          </p>
+
+          <ul>
+            <li>
+              Using the Site for any purpose that is unlawful, harmful,
+              threatening, abusive, harassing, defamatory, or otherwise
+              objectionable.
+            </li>
+            <li>
+              Attempting to gain unauthorized access to any portion of the Site,
+              its servers, databases, or any connected systems or networks.
+            </li>
+            <li>
+              Introducing viruses, trojans, worms, logic bombs, or other
+              material that is malicious, technologically harmful, or designed to
+              disrupt the Site&apos;s operation.
+            </li>
+            <li>
+              Using automated scripts, bots, crawlers, or scrapers to access,
+              collect data from, or interact with the Site without our express
+              written permission.
+            </li>
+            <li>
+              Impersonating any person or entity, or falsely claiming an
+              affiliation with any person or entity.
+            </li>
+            <li>
+              Interfering with or circumventing any security features of the
+              Site, including authentication mechanisms, access controls, or
+              usage limits.
+            </li>
+            <li>
+              Using the Site in any manner that could damage, disable,
+              overburden, or impair our servers or interfere with any other
+              party&apos;s use and enjoyment of the Site.
+            </li>
+          </ul>
+
+          <p>
+            We reserve the right to investigate and take appropriate legal action
+            against anyone who violates this Acceptable Use Policy, including
+            reporting such violations to law enforcement authorities.
+          </p>
+
+          {/* ── 11. Termination ── */}
+          <h2>11. Termination</h2>
+
+          <p>
+            We reserve the right to suspend, restrict, or terminate your access
+            to the Site at any time, for any reason or no reason, with or
+            without notice, and without liability to you. Reasons for
+            termination may include, but are not limited to, violations of these
+            Terms, conduct that we determine to be harmful to other users or the
+            Site, or requests from law enforcement or governmental agencies.
+          </p>
+
+          <p>
+            Upon termination, all provisions of these Terms that by their nature
+            should survive termination shall remain in full force and effect,
+            including but not limited to intellectual property provisions,
+            disclaimers of warranties, limitations of liability,
+            indemnification obligations, and dispute resolution provisions.
+          </p>
+
+          {/* ── 12. Governing Law ── */}
+          <h2>12. Governing Law</h2>
+
+          <p>
+            These Terms of Service shall be governed by, construed, and enforced
+            in accordance with applicable laws, without regard to principles of
+            conflict of laws. Any dispute, claim, or controversy arising out of
+            or relating to these Terms or your use of the Site shall first be
+            resolved through good-faith negotiation between the parties. If
+            negotiation fails to resolve the dispute within thirty (30) days,
+            either party may submit the dispute to the jurisdiction of a
+            competent court. You agree that any legal proceedings shall be
+            conducted on an individual basis only and not as part of a class,
+            consolidated, or representative action.
+          </p>
+
+          {/* ── 13. Changes to Terms ── */}
+          <h2>13. Changes to Terms</h2>
+
+          <p>
+            We reserve the right to revise, amend, update, or replace these
+            Terms of Service at any time at our sole discretion. When we make
+            changes, we will update the &quot;Effective Date&quot; at the top of
+            this page. For material changes that significantly alter your rights
+            or obligations, we may provide additional notice through a prominent
+            announcement on the Site. It is your responsibility to review these
+            Terms periodically to stay informed of any modifications. Your
+            continued use of the Site after any changes to these Terms have been
+            posted constitutes your acceptance of and agreement to the revised
+            Terms. If you do not agree with the updated Terms, your sole remedy
+            is to discontinue use of the Site.
+          </p>
+
+          {/* ── 14. Severability ── */}
+          <h2>14. Severability</h2>
+
+          <p>
+            If any provision of these Terms is found to be invalid, illegal, or
+            unenforceable by a court of competent jurisdiction, such invalidity,
+            illegality, or unenforceability shall not affect the validity or
+            enforceability of the remaining provisions. The remaining provisions
+            shall continue in full force and effect, and the invalid or
+            unenforceable provision shall be modified to the minimum extent
+            necessary to make it valid, legal, and enforceable while preserving
+            the original intent of the parties. If such modification is not
+            possible, the invalid provision shall be severed from these Terms,
+            and the remaining Terms shall be enforced as written.
+          </p>
+
+          {/* ── 15. Contact Information ── */}
+          <h2>15. Contact Information</h2>
+
+          <p>
+            If you have any questions, concerns, or requests regarding these
+            Terms of Service or any aspect of your use of Deficit Planner,
+            please contact us at:
+          </p>
+
+          <p>
+            <strong>Email:</strong>{" "}
+            <a href="mailto:spinaiceo@gmail.com">spinaiceo@gmail.com</a>
+          </p>
+
+          <p>
+            We will make every reasonable effort to respond to your inquiry
+            within a timely manner. We value your feedback and are committed to
+            addressing any concerns you may have about these Terms or the
+            operation of our Site.
+          </p>
+
+          <p>
+            <em>
+              These Terms of Service were last updated on March 30, 2026. Thank
+              you for using Deficit Planner.
+            </em>
           </p>
         </div>
       </main>
