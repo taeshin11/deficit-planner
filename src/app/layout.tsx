@@ -38,7 +38,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         {/* Adsterra Social Bar */}
-        {/* ADSTERRA_SOCIAL_BAR_SCRIPT_HERE */}
+        <script
+          async
+          src="https://pl29026922.profitablecpmratenetwork.com/53/cf/e0/53cfe0a2b7dd9ea7ef36d4b7af43fc3e.js"
+        />
       </head>
       <body className="min-h-screen flex flex-col"><ClientLayout>{children}</ClientLayout></body>
     </html>

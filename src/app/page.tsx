@@ -66,9 +66,14 @@ export default function Home() {
         {/* How it works */}
         <HowItWorksSection />
 
-        {/* Ad */}
-        <div style={{ padding: "0 20px 40px", maxWidth: 760, margin: "0 auto" }}>
+        {/* 300x250 Ad */}
+        <div style={{ padding: "0 20px 20px", maxWidth: 760, margin: "0 auto" }}>
           <AdUnit type="rectangle" />
+        </div>
+
+        {/* 728x90 Leaderboard Ad */}
+        <div style={{ padding: "0 20px 40px", maxWidth: 760, margin: "0 auto" }}>
+          <AdUnit type="leaderboard" />
         </div>
       </main>
       <Footer />
