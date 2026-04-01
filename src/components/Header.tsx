@@ -18,7 +18,7 @@ export default function Header() {
           <Link href="/#calculator" className="nav-link">{s("nav.calculator")}</Link>
           <Link href="/how-it-works" className="nav-link">{s("nav.howItWorks")}</Link>
           <Link href="/faq" className="nav-link">{s("nav.faq")}</Link>
-          <Link href="/blog/calorie-deficit-guide" className="nav-link">{s("nav.blog")}</Link>
+          <Link href="/blog" className="nav-link">{s("nav.blog")}</Link>
           <Link href="/about" className="nav-link">{s("nav.about")}</Link>
           {/* Language selector */}
           <select
@@ -58,7 +58,7 @@ export default function Header() {
             <Link href="/#calculator" className="nav-link" onClick={() => setMenuOpen(false)}>{s("nav.calculator")}</Link>
             <Link href="/how-it-works" className="nav-link" onClick={() => setMenuOpen(false)}>{s("nav.howItWorks")}</Link>
             <Link href="/faq" className="nav-link" onClick={() => setMenuOpen(false)}>{s("nav.faq")}</Link>
-            <Link href="/blog/calorie-deficit-guide" className="nav-link" onClick={() => setMenuOpen(false)}>{s("nav.blog")}</Link>
+            <Link href="/blog" className="nav-link" onClick={() => setMenuOpen(false)}>{s("nav.blog")}</Link>
             <Link href="/about" className="nav-link" onClick={() => setMenuOpen(false)}>{s("nav.about")}</Link>
             <select
               value={lang}

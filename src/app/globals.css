@@ -262,6 +262,14 @@ input:focus, select:focus, textarea:focus {
 ::-webkit-scrollbar-track { background: transparent; }
 ::-webkit-scrollbar-thumb { background: #CBD5E0; border-radius: 3px; }
 
+.blog-card {
+  transition: box-shadow 0.2s, transform 0.15s;
+}
+.blog-card:hover {
+  box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+  transform: translateY(-2px);
+}
+
 @media (max-width: 768px) {
   .section-title { font-size: 1.25rem; }
   .result-card .value { font-size: 1.5rem; }

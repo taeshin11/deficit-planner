@@ -29,11 +29,11 @@ export default function FeedbackWidget() {
           }),
         });
       } else {
-        window.location.href = `mailto:spinaiceo@gmail.com?subject=Deficit Planner Feedback&body=${encodeURIComponent(message)}`;
+        window.location.href = `mailto:taeshinkim11@gmail.com?subject=Deficit Planner Feedback&body=${encodeURIComponent(message)}`;
       }
       setSent(true);
     } catch {
-      window.location.href = `mailto:spinaiceo@gmail.com?subject=Deficit Planner Feedback&body=${encodeURIComponent(message)}`;
+      window.location.href = `mailto:taeshinkim11@gmail.com?subject=Deficit Planner Feedback&body=${encodeURIComponent(message)}`;
     } finally {
       setSending(false);
     }

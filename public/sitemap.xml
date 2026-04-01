@@ -43,6 +43,12 @@
     <priority>0.5</priority>
   </url>
   <url>
+    <loc>https://deficit-planner.vercel.app/blog</loc>
+    <lastmod>2026-03-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://deficit-planner.vercel.app/blog/calorie-deficit-guide</loc>
     <lastmod>2026-03-30</lastmod>
     <changefreq>monthly</changefreq>
