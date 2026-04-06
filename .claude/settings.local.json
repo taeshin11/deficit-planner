@@ -16,7 +16,9 @@
       "Bash(gcloud auth:*)",
       "Bash(cmd.exe /c start \"https://accounts.google.com/o/oauth2/auth?response_type=code&client_id=32555940559.apps.googleusercontent.com&scope=openid+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcloud-platform+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fappengine.admin+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fsqlservice.login+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcompute+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Faccounts.reauth&access_type=offline&code_challenge=test&code_challenge_method=S256&redirect_uri=http%3A%2F%2Flocalhost%3A8085&token_usage=remote\" 2>&1)",
       "Bash(cmd.exe /c start \"\" \"https://search.google.com/search-console/welcome\")",
-      "WebFetch(domain:deficit-planner.vercel.app)"
+      "WebFetch(domain:deficit-planner.vercel.app)",
+      "WebFetch(domain:www.google.com)",
+      "WebFetch(domain:www.bing.com)"
     ]
   }
 }
