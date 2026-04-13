@@ -58,6 +58,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en" className={inter.className}>
       <head>
+        <meta name="naver-site-verification" content="1ee805b00933fa356c873be908150c8904972fa9" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="google-adsense-account" content="ca-pub-7098271335538021" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
