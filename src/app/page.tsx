@@ -3,7 +3,6 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Calculator from "@/components/Calculator";
 import AdUnit from "@/components/AdUnit";
-import FeedbackWidget from "@/components/FeedbackWidget";
 import HeroSection from "@/components/HeroSection";
 import HowItWorksSection from "@/components/HowItWorksSection";
 
@@ -77,7 +76,6 @@ export default function Home() {
         </div>
       </main>
       <Footer />
-      <FeedbackWidget />
     </>
   );
 }

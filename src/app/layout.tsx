@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import ClientLayout from "@/components/ClientLayout";
+import FeedbackWidget from "@/components/FeedbackWidget";
 
 const inter = Inter({ subsets: ["latin"], display: "swap" });
 
@@ -33,10 +34,23 @@ export const metadata: Metadata = {
     images: ["/og-image.png"],
     creator: "@spinai",
   },
-  alternates: { canonical: "https://deficit-planner.vercel.app" },
+  alternates: {
+    canonical: "https://deficit-planner.vercel.app",
+    languages: {
+      "en": "https://deficit-planner.vercel.app/?lang=en",
+      "ko": "https://deficit-planner.vercel.app/?lang=ko",
+      "ja": "https://deficit-planner.vercel.app/?lang=ja",
+      "zh": "https://deficit-planner.vercel.app/?lang=zh",
+      "es": "https://deficit-planner.vercel.app/?lang=es",
+      "fr": "https://deficit-planner.vercel.app/?lang=fr",
+      "de": "https://deficit-planner.vercel.app/?lang=de",
+      "pt": "https://deficit-planner.vercel.app/?lang=pt",
+      "x-default": "https://deficit-planner.vercel.app",
+    },
+  },
   category: "Health & Fitness",
   verification: {
-    google: "GOOGLE_SITE_VERIFICATION_HERE",
+    google: "WddgcbVJsL2BGHNAje5m6DK56IcR0Mw5UOqozI2Xtrc",
   },
 };
 
@@ -45,7 +59,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="en" className={inter.className}>
       <head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="google-adsense-account" content="ca-pub-ADSENSE_ID_HERE" />
+        <meta name="google-adsense-account" content="ca-pub-7098271335538021" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         {/* Adsterra Social Bar */}
@@ -53,8 +67,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           async
           src="https://pl29026922.profitablecpmratenetwork.com/53/cf/e0/53cfe0a2b7dd9ea7ef36d4b7af43fc3e.js"
         />
+      <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7098271335538021" crossOrigin="anonymous"></script>
       </head>
-      <body className="min-h-screen flex flex-col"><ClientLayout>{children}</ClientLayout></body>
+      <body className="min-h-screen flex flex-col"><ClientLayout>{children}<FeedbackWidget /></ClientLayout></body>
     </html>
   );
 }

@@ -830,7 +830,14 @@ const t: Record<Lang, Record<string, string>> = {
 };
 
 function detectLang(): Lang {
-  if (typeof navigator === "undefined") return "en";
+  if (typeof window === "undefined") return "en";
+  // Check ?lang=xx URL param first
+  const urlParams = new URLSearchParams(window.location.search);
+  const urlLang = urlParams.get("lang");
+  if (urlLang && urlLang in t) {
+    localStorage.setItem("deficitPlannerLang", urlLang);
+    return urlLang as Lang;
+  }
   const saved = localStorage.getItem("deficitPlannerLang");
   if (saved && saved in t) return saved as Lang;
   const bl = navigator.language.split("-")[0].toLowerCase();
